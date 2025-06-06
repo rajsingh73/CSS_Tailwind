@@ -1,0 +1,106 @@
+.navbar{
+    display:flex;
+    margin-top:0px;
+    gap:80px;
+    align-items:center;
+    height:45px;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index:2000;
+    background-color:white;
+    border-bottom:1px solid rgb(212, 212, 212);
+
+}
+.navbar *{
+    cursor:pointer;
+}
+img{
+    width:20px;
+}
+.hamburg{
+    margin-left:20px;
+    width:22px;
+}
+.first-div{
+    display:flex;
+    align-items:center;
+}
+.youtube-logo{
+    margin-left:20px;
+    width:75px;
+}
+.notification-div{
+    position:relative;
+}
+.count-notification{
+    position:absolute;
+    top:-4px;
+    right:-4px;
+    background-color:red;
+    width:15px;
+    height:15px;
+    border-radius:100px;
+    color:white;
+    font-size:12px;
+    text-align:center;
+}
+.second-div{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex:1;
+}
+.search-holder{
+    height:30px;
+    width:50%;
+    border:1px solid rgb(151,151,151);
+    border-top-left-radius:2px;
+    border-bottom-left-radius:2px;
+    padding-left:10px;
+    outline:none;
+    font-size:14px;
+    max-width:270px;
+    cursor:text;
+
+}
+.search-holder:focus{
+    border:1px solid rgb(41, 41, 249);
+}
+.search-img{
+    height:30px;
+    border:1px solid rgb(151, 151, 151);
+    padding-left:15px;
+    padding-right:15px;
+    padding-top:1px;
+    padding-bottom:1px;
+    margin-left:0px;
+    border-left:none;
+    border-top-right-radius:2px;
+    border-bottom-right-radius:2px;
+
+}
+.voice-icon{
+    width:22px;
+    margin-left:18px;
+
+}
+.third-div{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-right:20px;
+}
+.upload{
+    width:22px;
+}
+.apps{
+    width:22px;
+}
+.notification{
+    width:22px;
+}
+.pic{
+    width:22px;
+}
