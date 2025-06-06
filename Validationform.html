@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+</head>
+<style>
+    nav ul{
+        display:flex;
+        list-style:none;
+        justify-content:center;
+        align-items:center;
+    }
+    nav ul li{
+        margin:0px 30px;
+    }
+    .he{
+        text-align:center;
+        background-color:rgb(255, 199, 199);
+    }
+    form{
+        text-align:center;
+        background-image:url(https://png.pngtree.com/background/20230211/original/pngtree-cartoon-valentines-day-border-background-love-balloons-picture-image_2026510.jpg);
+        padding:50px;
+        font-size:20px;
+        background-attachment:fixed;
+        background-size:cover;
+    }
+    form input{
+        margin-left:13px;
+    }
+    fieldset{
+        border-color:antiquewhite;
+    }
+</style>
+<body>
+    <nav>
+        <ul align:center>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+            <li>Services</li>
+        </ul>
+    </nav>
+    <h1 class="he">Application Form</h1>
+
+    <form action="/submit-form" class="formt" method="post">
+        <!-- Name Input -->
+        <fieldset>
+        <legend>Application Form</legend>
+        <br>
+
+        <label for="name">1. Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">2. Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="password">3. Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <!-- Phone Input -->
+        <label for="phone">4. Phone:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+        <br><br>
+
+        <!-- Gender Selection -->
+        <label>5. Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        <label>6. Hobby:</label>
+        <input type="radio" id="cricket" name="hobby">
+        <lable for="Cricket">Cricket</lable>
+        <input type="radio" id="hockey" name="hobby">
+        <lable for="hockey">Hockey</lable>
+        <input type="radio" id="Football" name="hobby">
+        <lable for="football">Football</lable>
+        <br>
+        <br>
+        <lable for="date">7. Date</lable>
+        <input id="date" type="datetime-local">
+        <br>
+        <br>
+        <label for="country">8. Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select your country--</option>
+            <option value="india">India</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br>
+        <br>
+
+
+        <!-- Message Text Area -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Write your message here..."></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+</body>
+</html>
